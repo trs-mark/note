@@ -7,10 +7,17 @@ var data = [];
 
 for(var a=0; a<Alloy.Globals.notes.length; a++){
 	var row = Ti.UI.createTableViewRow({
-		height: '35dp',
+		height: '50dp',
 		width: '100%',
 		backgroundColor: '#FFFFFF',
 		title: Alloy.Globals.notes[a].entry,
+		color: 'black',
+		font: {
+			fontFamily:'Helvetica',
+			fontSize: '20dp',
+			fontStyle: 'normal',
+			fontWeight: 'normal'
+		},
 		c_id: a
 	});
 	data.push(row);
