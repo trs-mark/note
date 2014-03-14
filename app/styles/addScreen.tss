@@ -21,9 +21,6 @@
 	height: '60dp',
 	width: '150dp'
 },
-"#btnAdd":{
-	title:'Add Note'
-},
-"#btnView":{
-	title:'View Notes'
+"#btnBack":{
+	title:'Back'
 }

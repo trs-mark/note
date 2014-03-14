@@ -3,7 +3,7 @@
 	layout:'vertical'
 },
 "Label": {
-	top:'50dp',
+	top:'10dp',
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	font: {
@@ -14,16 +14,19 @@
 	},
 	color: 'white'
 },
+"#list":{
+	top:'10dp',
+	backgroundColor: '#FFFFFF',
+	height:'350dp',
+	width:'300dp'
+},
 "Button":{
-	top:'100dp',
+	top:'10dp',
 	color: 'white',
 	backgroundColor: '#333333',
 	height: '60dp',
 	width: '150dp'
 },
-"#btnAdd":{
-	title:'Add Note'
-},
-"#btnView":{
-	title:'View Notes'
+"#btnBack":{
+	title:'Back'
 }

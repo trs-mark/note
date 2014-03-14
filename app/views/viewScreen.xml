@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" id="viewScreen">
+		<Label id="label">View Notes</Label>
+		<TableView id="list"></TableView>
+		<Button id="btnBack" onClick="back"></Button>
+	</Window>
+</Alloy>
