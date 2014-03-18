@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-development" type="string">5j6IbjQWmEVsYLKbqQjtTztrMepzszcS</property>
+    <property name="acs-oauth-key-development" type="string">661mfQ5XjIx3gruPum6VgEePtvhSchvY</property>
+    <property name="acs-api-key-development" type="string">WIvhlwpLLVtXWtlx6rhknUUReKc6Nq0V</property>
+    <property name="acs-oauth-secret-production" type="string">yxgu8d6rwKp3aRvR1zlGbW1ui15KHQvy</property>
+    <property name="acs-oauth-key-production" type="string">0gAb7MAdOGdPVmzcnahPL1qMV0TpX3uh</property>
+    <property name="acs-api-key-production" type="string">Tp4LtrgNYzUMNDcI54Yl8nY4n1VxIYmm</property>
     <id>ph.trd.note</id>
     <name>note</name>
     <version>1.0</version>
@@ -37,7 +43,10 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+        <module platform="commonjs" version="3.2.1">ti.cloud</module>
+        <module platform="android" version="2.3.2">ti.cloudpush</module>
+    </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="blackberry">false</target>

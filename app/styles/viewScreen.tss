@@ -22,7 +22,7 @@
 },
 "Button":{
 	top:'10dp',
-	color: 'white',
+	color: 'black',
 	backgroundColor: '#333333',
 	height: '60dp',
 	width: '150dp'
