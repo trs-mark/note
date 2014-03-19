@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" id="mainScreen">
+		<Label id="label">Main Screen</Label>
+		<Label id="lblUser">Welcome!</Label>
+		<Button id="btnLogOut" onClick="logOut"></Button>
+	</Window>
+</Alloy>

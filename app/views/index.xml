@@ -1,7 +1,9 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label">Simple Note</Label>
-		<Button id="btnAdd" onClick="addNote"></Button>
-		<Button id="btnView" onClick="viewNote"></Button>
+		<Label id="label">ACS Test</Label>
+		<TextField id="txtUser"></TextField>
+		<TextField id="txtPassword"></TextField>
+		<Button id="btnLogin" onClick="login"></Button>
+		<Button id="btnRegister" onClick="register"></Button>
 	</Window>
 </Alloy>

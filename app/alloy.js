@@ -10,6 +10,11 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
+Alloy.Globals.Cloud = require('ti.cloud');
+Alloy.Globals.device = {
+	token:'',
+};
+
 Alloy.Globals.notes = [{
 	'date':{month:'February',day:'14',year:'2014'},
 	'time':{hour:10,minute:0},

@@ -1,13 +1,71 @@
-function addNote(e) {
-	var addWindow = Alloy.createController('addScreen').getView();
-	addWindow.open();
+function login(e) {
+	var user = ($.txtUser.value).trim();
+	var pass = ($.txtPassword.value).trim();
+	if(user!='' && pass!=''){
+		loginUser(user,pass);
+	}else{
+		alert('Invalid user and password.');
+	}
 }
 
-function viewNote(e) {
-	var viewWindow = Alloy.createController('viewScreen').getView();
-	viewWindow.open();
+function register(e){
+	var registrationWindow = Alloy.createController('registrationScreen').getView();
+	registrationWindow.open();
 }
 
+function loginUser(user,pass) {
+	Alloy.Globals.Cloud.Users.login({
+		login : user,
+		password : pass
+	}, function(e) {
+		if (e.success) {
+			var user = e.users[0];
+			Ti.API.info(user);
+			Ti.API.info("Loggin successfully");
+			getDeviceToken();
+			var mainWindow = Alloy.createController('mainScreen').getView();
+			mainWindow.open();
+		} else {
+			alert("Error :" + e.message);
+		}
+	});
+}
+
+// getting device token
+function getDeviceToken(){
+	Titanium.Network.registerForPushNotifications({
+		types: [
+			Titanium.Network.NOTIFICATION_TYPE_BADGE,
+			Titanium.Network.NOTIFICATION_TYPE_ALERT,
+			Titanium.Network.NOTIFICATION_TYPE_SOUND
+		],success:function(e){
+			Alloy.Globals.device.token = e.deviceToken;
+			Ti.API.info("deviceToken = "+e.deviceToken);
+			registerForPush();
+		},error:function(e){
+			alert("Error: "+e.message);
+		},callback:function(e){
+			alert("push notification received"+JSON.stringify(e.data));
+		}
+	});
+}
+
+// register for push notification on cloud server
+function registerForPush(){
+	Alloy.Globals.Cloud.PushNotifications.subscribe({
+		channel: 'test',
+		type:'ios',
+		device_token: deviceToken
+	}, function (e) {
+		if (e.success) {
+			alert('Success :'+((e.error && e.message) || JSON.stringify(e)));
+		} else {
+			alert('Error:' + ((e.error && e.message) || JSON.stringify(e)));
+		}
+	});
+}
+
+/*
 if(Ti.Platform.name==='android'){
 	// Require in the module
 	var CloudPush = require('ti.cloudpush');
@@ -140,5 +198,5 @@ if(Ti.Platform.name==='android'){
 	
 	createUser();
 }
-
+*/
 $.index.open();

@@ -24,17 +24,39 @@
 	borderRadius: 1
 },
 "Button":{
-	top:'20dp',
+	top: 0,
 	color: 'black',
 	height: '60dp',
-	width: '150dp'
+	width: '120dp'
 },
-"#btnLogin":{
-	title:'Login'
+"#buttonHolder":{
+	top:'20dp',
+	backgroundColor:'transparent',
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL
 },
 "#btnRegister":{
+	right: '25dp',
 	title:'Register'
-}
+},
+"#btnBack":{
+	left: '25dp',
+	title:'Back'
+},
+"#txtUser":{
+	hintText: 'email address'
+},
+"#txtFirstName":{
+	hintText: 'first name'
+},
+"#txtLastName":{
+	hintText: 'last name'
+},
 "#txtPassword":{
+	hintText: 'password',
+	passwordMask: true
+},
+"#txtPasswordConfirm":{
+	hintText: 'confirm password',
 	passwordMask: true
 }
