@@ -23,4 +23,7 @@
 },
 "#btnLogOut":{
 	title:'Log Out'
+},
+"#btnChats":{
+	title:'Chats'
 }

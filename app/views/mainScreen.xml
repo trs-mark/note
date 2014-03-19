@@ -2,6 +2,7 @@
 	<Window class="container" id="mainScreen">
 		<Label id="label">Main Screen</Label>
 		<Label id="lblUser">Welcome!</Label>
+		<Button id="btnChats" onClick="chats"></Button>
 		<Button id="btnLogOut" onClick="logOut"></Button>
 	</Window>
 </Alloy>

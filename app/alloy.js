@@ -14,14 +14,3 @@ Alloy.Globals.Cloud = require('ti.cloud');
 Alloy.Globals.device = {
 	token:'',
 };
-
-Alloy.Globals.notes = [{
-	'date':{month:'February',day:'14',year:'2014'},
-	'time':{hour:10,minute:0},
-	'entry':"Today is Valentine's day! Don't forget to buy flowers."
-},{
-	'date':{month:'March',day:'1',year:'2014'},
-	'time':{hour:9,minute:30},
-	'entry':"This month is Graduation day! Plan a surprise gift."
-}
-];
