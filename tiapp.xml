@@ -46,6 +46,8 @@
     <modules>
         <module platform="commonjs" version="3.2.1">ti.cloud</module>
         <module platform="android" version="2.3.2">ti.cloudpush</module>
+        <module platform="iphone" version="3.1.1">facebook</module>
+        <module platform="android" version="3.0.2">facebook</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>

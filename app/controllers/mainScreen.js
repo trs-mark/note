@@ -1,3 +1,5 @@
+Ti.include('/acs/app.js');
+
 Alloy.Globals.Cloud.Users.showMe(function (e) {
 	if (e.success) {
 		var user = e.users[0];
@@ -24,3 +26,6 @@ function logOut(e) {
 	});
 }
 
+function chats(e){
+	win.open();
+}
