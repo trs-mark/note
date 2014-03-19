@@ -9,8 +9,3 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
-
-Alloy.Globals.Cloud = require('ti.cloud');
-Alloy.Globals.device = {
-	token:'',
-};
