@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container" id="addScreen">
+		<Label id="label">Add Note</Label>
+		<TextArea id="note"></TextArea>
+		<View id="buttonHolder">
+			<Button id="btnAdd" onClick="add"></Button>
+			<Button id="btnBack" onClick="back"></Button>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,51 @@
+".container": {
+	backgroundColor:'white',
+	layout:'vertical'
+},
+"Label": {
+	top:'10dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font: {
+		fontFamily:'Helvetica',
+		fontSize: '30dp',
+		fontStyle: 'normal',
+		fontWeight: 'normal'
+	},
+	color: 'black'
+},
+"Button":{
+	color: 'black',
+	backgroundColor: '#333333',
+	height: '60dp',
+	width: '140dp'
+},
+"#note":{
+	top:'10dp',
+	height:'330dp',
+	width:'300dp',
+	font: {
+		fontFamily:'Helvetica',
+		fontSize: '20dp',
+		fontStyle: 'normal',
+		fontWeight: 'normal'
+	},
+	color:'black',
+	borderColor:'black',
+	borderWidth:'2dp',
+	borderRadius:1
+},
+"#buttonHolder":{
+	top:'10dp',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent'
+},
+"#btnSave":{
+	left:'10dp',
+	title:'Save'
+},
+"#btnBack":{
+	right:'10dp',
+	title:'Back'
+}
