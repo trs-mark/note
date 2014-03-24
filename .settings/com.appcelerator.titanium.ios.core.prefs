@@ -1,4 +1,11 @@
 eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=note
+iosLaunchConfigurationAttributes/appid=ph.trd.note
+iosLaunchConfigurationAttributes/certificate=Teppei Tokikawa (4644NZDUF6)
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/sdk_version=7.0
+iosLaunchConfigurationAttributes/uuid=D9E763F6-4B88-49C1-8D39-FEC4F707CE2C
 provisioning_profiles/development/8E9DF3AE-22CF-44A7-9C4C-5614066B0B08/appid=*
 provisioning_profiles/development/8E9DF3AE-22CF-44A7-9C4C-5614066B0B08/name=TRD 2014
 provisioning_profiles/development/8E9DF3AE-22CF-44A7-9C4C-5614066B0B08/uuid=8E9DF3AE-22CF-44A7-9C4C-5614066B0B08
