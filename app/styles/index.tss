@@ -1,29 +1,8 @@
 ".container": {
-	backgroundColor:'white',
-	layout:'vertical'
+	backgroundColor:"white"
 },
 "Label": {
-	top:'50dp',
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	font: {
-		fontFamily:'Helvetica',
-		fontSize: '30dp',
-		fontStyle: 'normal',
-		fontWeight: 'normal'
-	},
-	color: 'black'
-},
-"Button":{
-	top:'100dp',
-	color: 'black',
-	backgroundColor: '#333333',
-	height: '60dp',
-	width: '150dp'
-},
-"#btnAdd":{
-	title:'Add Note'
-},
-"#btnView":{
-	title:'View Notes'
-}
+	color: "#000"
+} 
