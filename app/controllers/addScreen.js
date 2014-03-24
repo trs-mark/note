@@ -2,25 +2,7 @@ function add(e){
 	var note = $.note.value;
 	if(note.trim().length > 0){
 		var newDate = new Date();
-		var hour = newDate.getHours();
-		var minute = newDate.getMinutes();
-		var day = newDate.getDate();
-		var month = newDate.getMonth();
-		var year = newDate.getFullYear();
-		var newNote = {
-			'date':{
-				'month':getMonthStr(month),
-				'day':day,
-				'year':year
-				},
-			'time':{
-				'hour':hour,
-				'minute':minute
-				},
-			'entry':note.trim()
-		};
-		Alloy.Globals.notes.push(newNote);
-		$.note.value = "";
+		
 		alert('Note added.');
 	}else{
 		alert('Please type a note.');
