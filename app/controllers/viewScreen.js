@@ -1,9 +1,11 @@
 function back(e) {
+	deleteNotes();
 	$.viewScreen.close();
 }
 
 // put entries on list
 var data = [];
+var toBeDeleted = [];
 
 for(var a=0; a<Alloy.Globals.notes.length; a++){
 	var row = Ti.UI.createTableViewRow({
@@ -35,11 +37,19 @@ $.list.addEventListener('click', function(e) {
 		note.buttonNames = ['Ok','Edit','Delete'];
 		note.addEventListener('click',function(e){
 			if(e.index == 1){
-				//put code for edit here
+				alert(a);
 			}else if(e.index == 2){
-				//put code for delete here
+				$.list.deleteRow(data[a]);
+				toBeDeleted.push(a);
+				alert('note deleted');
 			}
 		});
 		note.show();
 	}
 });
+
+function deleteNotes(){
+	for(var a=0; a<toBeDeleted.length; a++){
+		Alloy.Globals.notes.splice(a,1);
+	}
+}

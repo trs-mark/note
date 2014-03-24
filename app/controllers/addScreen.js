@@ -20,8 +20,8 @@ function add(e){
 			'entry':note.trim()
 		};
 		Alloy.Globals.notes.push(newNote);
+		$.note.value = "";
 		alert('Note added.');
-		$.addScreen.close();
 	}else{
 		alert('Please type a note.');
 	}
