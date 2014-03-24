@@ -1,9 +1,9 @@
 ".container": {
-	backgroundColor:'black',
+	backgroundColor:'white',
 	layout:'vertical'
 },
 "Label": {
-	top:'50dp',
+	top:'10dp',
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	font: {
@@ -12,15 +12,40 @@
 		fontStyle: 'normal',
 		fontWeight: 'normal'
 	},
-	color: 'white'
+	color: 'black'
 },
 "Button":{
-	top:'100dp',
-	color: 'white',
+	color: 'black',
 	backgroundColor: '#333333',
 	height: '60dp',
-	width: '150dp'
+	width: '140dp'
+},
+"#note":{
+	top:'10dp',
+	height:'330dp',
+	width:'300dp',
+	font: {
+		fontFamily:'Helvetica',
+		fontSize: '20dp',
+		fontStyle: 'normal',
+		fontWeight: 'normal'
+	},
+	color:'black',
+	borderColor:'black',
+	borderWidth:'2dp',
+	borderRadius:1
+},
+"#buttonHolder":{
+	top:'10dp',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'transparent'
+},
+"#btnAdd":{
+	left:'10dp',
+	title:'Add'
 },
 "#btnBack":{
+	right:'10dp',
 	title:'Back'
 }

@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor:'black',
+	backgroundColor:'white',
 	layout:'vertical'
 },
 "Label": {
@@ -12,17 +12,20 @@
 		fontStyle: 'normal',
 		fontWeight: 'normal'
 	},
-	color: 'white'
+	color: 'black'
 },
 "#list":{
 	top:'10dp',
 	backgroundColor: '#FFFFFF',
-	height:'350dp',
+	borderColor: 'black',
+	borderWidth: '2dp',
+	borderRadius: 1,
+	height:'330dp',
 	width:'300dp'
 },
 "Button":{
 	top:'10dp',
-	color: 'white',
+	color: 'black',
 	backgroundColor: '#333333',
 	height: '60dp',
 	width: '150dp'

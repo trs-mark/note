@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor:'black',
+	backgroundColor:'white',
 	layout:'vertical'
 },
 "Label": {
@@ -12,11 +12,11 @@
 		fontStyle: 'normal',
 		fontWeight: 'normal'
 	},
-	color: 'white'
+	color: 'black'
 },
 "Button":{
 	top:'100dp',
-	color: 'white',
+	color: 'black',
 	backgroundColor: '#333333',
 	height: '60dp',
 	width: '150dp'
