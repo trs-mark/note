@@ -37,7 +37,9 @@ $.list.addEventListener('click', function(e) {
 		note.buttonNames = ['Ok','Edit','Delete'];
 		note.addEventListener('click',function(e){
 			if(e.index == 1){
-				alert(a);
+				Alloy.Globals.noteToEdit = a;
+				var editWindow = Alloy.createController('editScreen').getView();
+				editWindow.open();
 			}else if(e.index == 2){
 				$.list.deleteRow(data[a]);
 				toBeDeleted.push(a);

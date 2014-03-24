@@ -20,3 +20,5 @@ Alloy.Globals.notes = [{
 	'entry':"This month is Graduation day! Plan a surprise gift."
 }
 ];
+
+Alloy.Globals.noteToEdit = -1;
