@@ -1,9 +1,9 @@
-#appname: note
-#appid: ph.trd.note
-#type: mobile
-#guid: 17db9bf7-c00e-4dd8-9f77-2c08c4c66af2
-#version: 1.0
-#publisher: not specified
-#url: not specified
-#image: appicon.png
-#desc: not specified
+#appname:note
+#appid:ph.trd.note.test
+#type:mobile
+#guid:17db9bf7-c00e-4dd8-9f77-2c08c4c66af2
+#version:1.0
+#publisher:tokikawateppei
+#url:http://
+#image:appicon.png
+#desc:not specified
