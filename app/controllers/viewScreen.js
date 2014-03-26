@@ -40,7 +40,7 @@ $.list.addEventListener('click', function(e) {
 				Alloy.Globals.noteToEdit = a;
 			}else if(e.index == 2){
 				$.list.deleteRow(data[a]);
-				toBeDeleted.push();
+				toBeDeleted.push(e);
 				alert('note deleted');
 			}
 		});
