@@ -38,11 +38,9 @@ $.list.addEventListener('click', function(e) {
 		note.addEventListener('click',function(e){
 			if(e.index == 1){
 				Alloy.Globals.noteToEdit = a;
-				var editWindow = Alloy.createController('editScreen').getView();
-				editWindow.open();
 			}else if(e.index == 2){
 				$.list.deleteRow(data[a]);
-				toBeDeleted.push(a);
+				toBeDeleted.push();
 				alert('note deleted');
 			}
 		});

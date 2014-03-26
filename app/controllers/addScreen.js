@@ -2,14 +2,14 @@ function add(e){
 	var note = $.note.value;
 	if(note.trim().length > 0){
 		var newDate = new Date();
-		var hour = newDate.getHours();
-		var minute = newDate.getMinutes();
-		var day = newDate.getDate();
+		var hour;
+		var minute;
+		var day;
 		var month = newDate.getMonth();
-		var year = newDate.getFullYear();
+		var yea;
 		var newNote = {
 			'date':{
-				'month':getMonthStr(month),
+				'month':getMonthStr(),
 				'day':day,
 				'year':year
 				},
@@ -19,7 +19,7 @@ function add(e){
 				},
 			'entry':note.trim()
 		};
-		Alloy.Globals.notes.push(newNote);
+		Alloy.Globals.notes.push();
 		$.note.value = "";
 		alert('Note added.');
 	}else{

@@ -3,7 +3,6 @@
 		<Label id="label">Edit Note</Label>
 		<TextArea id="note"></TextArea>
 		<View id="buttonHolder">
-			<Button id="btnSave" onClick="save"></Button>
 			<Button id="btnBack" onClick="back"></Button>
 		</View>
 	</Window>
