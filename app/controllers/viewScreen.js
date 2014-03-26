@@ -1,5 +1,4 @@
 function back(e) {
-	deleteNotes();
 	$.viewScreen.close();
 }
 
@@ -38,9 +37,11 @@ $.list.addEventListener('click', function(e) {
 		note.addEventListener('click',function(e){
 			if(e.index == 1){
 				Alloy.Globals.noteToEdit = a;
+				editNote();
 			}else if(e.index == 2){
 				$.list.deleteRow(data[a]);
-				toBeDeleted.push();
+				toBeDeleted.push(data[a]);
+				deleteNotes(a);
 				alert('note deleted');
 			}
 		});
@@ -48,8 +49,13 @@ $.list.addEventListener('click', function(e) {
 	}
 });
 
-function deleteNotes(){
+function deleteNotes(b){
+
 	for(var a=0; a<toBeDeleted.length; a++){
-		Alloy.Globals.notes.splice(a,1);
+		Alloy.Globals.notes.splice(b,1);
 	}
+}
+function editNote() {
+	var EditWindow = Alloy.createController('editScreen').getView();
+	EditWindow.open();
 }

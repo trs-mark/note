@@ -20,4 +20,4 @@ Alloy.Globals.notes = [{
 }
 ];
 
-Alloy.Globals.noteToEdit = -1;
+Alloy.Globals.noteToEdit =-1;

@@ -6,7 +6,7 @@ function add(e){
 		var minute;
 		var day;
 		var month = newDate.getMonth();
-		var yea;
+		var year;
 		var newNote = {
 			'date':{
 				'month':getMonthStr(),
@@ -19,7 +19,7 @@ function add(e){
 				},
 			'entry':note.trim()
 		};
-		Alloy.Globals.notes.push();
+		Alloy.Globals.notes.push(newNote);
 		$.note.value = "";
 		alert('Note added.');
 	}else{

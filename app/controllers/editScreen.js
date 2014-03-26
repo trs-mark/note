@@ -1,4 +1,5 @@
 var a = Alloy.Globals.noteToEdit;
+//alert('id'+a+'jSON:'+ JSON.stringify(Alloy.Globals.notes[0].entry[0]));
 $.note.value = Alloy.Globals.notes[a].entry;
 
 function save(e){
