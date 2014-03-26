@@ -49,7 +49,7 @@ $.list.addEventListener('click', function(e) {
 });
 
 function deleteNotes(){
-	for(var a=0; a<toBeDeleted.length; a++){
+	for(var a=0; a<Alloy.Globals.notes.length; a++){
 		Alloy.Globals.notes.splice(a,1);
 	}
 }

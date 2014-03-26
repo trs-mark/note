@@ -1,5 +1,5 @@
-var a = Alloy.Globals.noteToEdit;
-$.note.value = Alloy.Globals.notes[a].entry;
+var e = Alloy.Globals.noteToEdit;
+$.note.value = Alloy.Globals.notes[e].entry;
 
 function save(e){
 	var note = $.note.value;
@@ -10,12 +10,12 @@ function save(e){
 		var day = newDate.getDate();
 		var month = newDate.getMonth();
 		var year = newDate.getFullYear();
-		Alloy.Globals.notes[a].entry = note.trim();
-		Alloy.Globals.notes[a].date.month = getMonthStr(month);
-		Alloy.Globals.notes[a].date.day = day;
-		Alloy.Globals.notes[a].date.year = year;
-		Alloy.Globals.notes[a].time.hour = hour;
-		Alloy.Globals.notes[a].time.minute = minute;
+		Alloy.Globals.notes[e].entry = note.trim();
+		Alloy.Globals.notes[e].date.month = getMonth(month);
+		Alloy.Globals.notes[e].date.day = getDate(day);
+		Alloy.Globals.notes[e].date.year = getFullYear(year);
+		Alloy.Globals.notes[e].time.hour = getHours(hour);
+		Alloy.Globals.notes[e].time.minute = getMinutes(minute);
 		$.editScreen.close();
 		alert('note saved');
 	}else{
@@ -26,11 +26,24 @@ function save(e){
 function back(e) {
 	$.editScreen.close();
 }
-
+function getdayStr(a){
+	if(a>=1&&i<=31){
+		return a;
+	}else{
+		return '-';
+	}
+}
 function getMonthStr(i){
 	if(i>=0&&i<=11){
 		var monthStrArr = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 		return monthStrArr[i];
+	}else{
+		return '-';
+	}
+}
+function getYearStr(b){
+	if(b>=2014&&b<=2016){
+		return b;
 	}else{
 		return '-';
 	}

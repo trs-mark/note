@@ -2,20 +2,20 @@ function add(e){
 	var note = $.note.value;
 	if(note.trim().length > 0){
 		var newDate = new Date();
-		var hour;
-		var minute;
-		var day;
+		var hour = newDate.getHours();
+		var minute = newDate.getMinutes();
+		var day = newDate.getDate();
 		var month = newDate.getMonth();
-		var yea;
+		var year = newDate.getFullYear();
 		var newNote = {
 			'date':{
-				'month':getMonthStr(),
-				'day':day,
-				'year':year
+				'month':getMonth(),
+				'day':getDate(),
+				'year':getFullYear()
 				},
 			'time':{
-				'hour':hour,
-				'minute':minute
+				'hour':getHours(),
+				'minute':getMinutes()
 				},
 			'entry':note.trim()
 		};
@@ -30,7 +30,6 @@ function add(e){
 function back(e) {
 	$.addScreen.close();
 }
-
 function getMonthStr(i){
 	if(i>=0&&i<=11){
 		var monthStrArr = ['January','February','March','April','May','June','July','August','September','October','November','December'];
