@@ -37,9 +37,13 @@ $.list.addEventListener('click', function(e) {
 		note.buttonNames = ['Ok','Edit','Delete'];
 		note.addEventListener('click',function(e){
 			if(e.index == 1){
-				//put code for edit here
+				//put code for edit here	
+				var editWindow = Alloy.createController('editScreen').getView();
+				$.viewScreen.close();
+				editWindow.open();
 			}else if(e.index == 2){
 				//put code for delete here
+				Alloy.Globals.notes[a]= null;
 			}
 		});
 		note.show();
@@ -51,3 +55,4 @@ function deleteNotes(){
 		Alloy.Globals.notes.splice(a,1);
 	}
 }
+
