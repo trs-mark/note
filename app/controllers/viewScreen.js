@@ -36,10 +36,12 @@ $.list.addEventListener('click', function(e) {
 					Alloy.Globals.notes[a].time.hour + ':' + Alloy.Globals.notes[a].time.minute;
 		note.buttonNames = ['Ok','Edit','Delete'];
 		note.addEventListener('click',function(e){
-			if(e.index == 1){
+			if(e.index == 1)
+			{
 				//put code for edit here
-			}else if(e.index == 2){
-				//put code for delete here
+			}else if(e.index == 2)
+			{
+				Alloy.Globals.notes.splice(a,1);
 			}
 		});
 		note.show();

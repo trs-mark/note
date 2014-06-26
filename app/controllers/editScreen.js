@@ -1,7 +1,9 @@
 var a = Alloy.Globals.noteToEdit;
 $.note.value = Alloy.Globals.notes[a].entry;
 
-function save(e){
+function save(e)
+{
+
 }
 
 function back(e) {

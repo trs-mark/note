@@ -1,9 +1,21 @@
 function add(e){
 	var note = $.note.value;
-	if(note.trim().length > 0){
+	if(note.trim().length > 0)
+	{
 		var newDate = new Date();
 		
+		Alloy.Globals.notes.push(
+			{
+				
+			'date':{month: 'June', day: '26' ,year: '2014'},
+			'time':{hour: '18',minute: '0'},
+			'entry': note
+
+			
+		});
+		
 		alert('Note added.');
+		
 	}else{
 		alert('Please type a note.');
 	}
